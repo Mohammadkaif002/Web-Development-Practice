@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .board{
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(8, 50px);
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+        }
+        .white{
+            background-color: white;
+        }
+        .black{
+            background-color: black; 
+        }
+    </style>
+</head>
+<body>
+    <h1>8 x 8 Chess Board</h1>
+    <script>
+        let board = document.createElement("div");
+        board.classList.add("board");
+        for(let i=1; i<=8; i++){
+        for(let j=1; j<=8; j++){
+            let box=document.createElement("div");
+            box.classList.add("box");
+            if((i+j) %2 ===0){
+                box.classList.add("white");
+            } else {
+                box.classList.add("black");
+            }
+            board.append(box);
+        }
+    }
+    document.body.append(board);
+    </script>
+
+</body>
+</html>

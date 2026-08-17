@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+        table, th, td {
+    border: 1px solid ;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+    </style>
+</head>
+<body>
+    <script>
+            // ? table creation in dynamic way
+      let employeesData=[
+      ["name","roll",'salary','empid'],
+      ["huha","developer",'25000','101'],
+      ["heheh",'testing','10000','102'],
+      ['meow','faahhhh','45677','103']
+      ];
+
+      let table=document.createElement("table")
+      employeesData.forEach((rows, index) =>{
+        let tr=document.createElement("tr");
+
+        rows.forEach((data) => {
+            let cell=document.createElement(index == 0 ? "th" : "td");
+            cell.textContent = data;
+            tr.append(cell);
+        });
+        table.append(tr);
+      });
+      document.body.append(table);
+    </script>
+
+</body>
+</html>

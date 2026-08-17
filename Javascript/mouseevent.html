@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="console.log('you clicked on h1');">Mouse Event</h1>
+
+    <p ondblclick="console.log('you clicked on p');">By using attributes</p>
+
+    <button onmousedown="console.log('you clicked button');">Click here</button>
+
+    <button onmousedown="demo()" onmousemove="test()">click me</button>
+    <script>
+        function demo(){
+            console.log("hello");
+        }
+
+        function test(){
+            console.log("test");
+        }
+    </script>
+</body>
+</html>

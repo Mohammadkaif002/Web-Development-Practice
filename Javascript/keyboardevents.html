@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is h1</h1>
+    <p>By using dom elements</p>
+    <input placeholder="enter value"></input>
+    <script>
+       let inp= document.querySelector("input")
+       inp.onkeypress=(e)=>{
+        console.log("yopu pressed a key:"+e.key);
+        // console.log(e.key);
+       }
+
+    //    inp.onkeypress=(e)=>{
+    //     console.log("press");
+    //    }       
+    //    inp.onkeyup=(e)=>{
+    //     console.log("up");
+    //    }       
+    //    inp.onkeydown=(e)=>{
+    //     console.log("down");
+    //    }
+    </script>
+</body>
+</html>

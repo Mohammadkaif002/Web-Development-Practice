@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1>form Events</h1>
+        <p>by using addEventlistener</p>
+        <form action="">
+        <input typea"text"1>
+        <button>submit</button>
+        </form>
+    <script>
+    let form = document.queryselector('form')
+    let inp = document.queryselector( 'input')
+///addEventLstner('event', 'callback ', 'usecapture')
+    form.addEventListener("submit", (e) =>{
+    e.preventDefault()
+    console.log('form submitted')
+    console.log(inp.value)});
+
+    form.addEventListener("input", (e)=>{
+        console.log(inp.value)
+    }); 
+    </script>
+</body>
+</html>

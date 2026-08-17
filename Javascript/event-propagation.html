@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: red;
+            height: 200px;
+            width:200px;
+            cursor: pointer;
+            display:flex;
+            justify-content: center;
+            align-items: center
+        }
+        section{
+            background-color: blue;
+            height:70%;
+            width:70%;
+            cursor:cell;
+            display:flex;
+            justify-content: center;
+            align-items: center
+        }
+        button{
+            height:30px;
+            width:90px
+        }
+
+    </style>
+</head>
+<body>
+    <h1>event propagation</h1>
+    <div>
+        <section>
+            <button>Click here</button>
+        </section>
+    </div>
+    <script>
+        let div= document.querySelector("div")
+        let section = document.querySelector("section")
+        let btn=document.querySelector("button")
+        div.addEventListener(
+            "click",(e)=>{
+                console.log("you clicked on div tag")
+                // e.stopPropagation()
+            }
+            ,true
+        )
+        section.addEventListener(
+            "click",(e)=>{
+                console.log("you clicked on section tag")
+                // e.stopPropagation()
+            }
+            // ,true
+        )
+        btn.addEventListener(
+            "click",(e)=>{
+                console.log("you clicked on button tag")
+                // e.stopPropagation()
+            }
+            // ,true
+        )
+    </script>
+</body>
+</html>
