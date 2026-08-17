@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="form.html" method="post"
+    >
+        <fieldset style="width: 0;">
+            <legend><h2>Login</h2></legend>
+        
+        <table>
+            <tr>
+                <th><label for="username">Username:</label></th>
+                <td colspan="2">
+                    <input type="text" id="" name="" placeholder="Username" minlength="6"required />
+                </td>
+            </tr>
+            <tr>
+                <th><label for="password">Password:</label></th>
+                <td colspan="2">
+                    <input type="password" id="" name="" placeholder="Password" pattern="[a-zA-Z0-9#]+"
+                    title="must contain one lowercase, upeercase, digit and special character #"  required />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="" id="toggle">
+                    <label for="toggle">Show Password</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Login"></input></td>
+                <td><input type="button" value="Cancel"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p>Forgot password? <a href="">Reset here</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p>Not registered? <a href="">Register here</a></p>
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+    </form>
+</body>
+</html>

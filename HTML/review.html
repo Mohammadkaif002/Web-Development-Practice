@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Review</title>
+		<style>
+			body { font-family: Arial, Helvetica, sans-serif; background:#f7f7f7; padding:30px; }
+			.form-wrap { max-width:540px; margin:24px auto; background:#fff; padding:18px; border:1px solid #ccc; box-shadow:0 2px 6px rgba(0,0,0,0.05); }
+			fieldset { border:1px solid #999; padding:12px 14px; margin:12px 0; }
+			legend { font-weight:bold; padding:0 6px; }
+			label { display:block; margin:8px 0 4px; font-size:90%; }
+			input[type="text"], input[type="email"], select, textarea { width:100%; padding:8px; border:1px solid #bbb; border-radius:3px; box-sizing:border-box; }
+			.radio-row, .checkbox-row { margin:8px 0; }
+			.small { width:auto; display:inline-block; vertical-align:middle; }
+			.actions { margin-top:12px; }
+			button { padding:8px 14px; border:0; background:#4CAF50; color:#fff; border-radius:4px; cursor:pointer; }
+			button:hover { background:#45a049; }
+		</style>
+	</head>
+	<body>
+		<div class="form-wrap">
+			<form method="post" action="#">
+				<fieldset>
+					<legend>Your Details</legend>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" placeholder="Enter your name">
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="you@example.com">
+				</fieldset>
+
+				<fieldset>
+					<legend>Your Review</legend>
+
+					<label for="source">How did you hear about us?</label>
+					<select id="source" name="source">
+						<option value="google" selected>Google</option>
+						<option value="friend">Friend</option>
+						<option value="ad">Advertisement</option>
+						<option value="other">Other</option>
+					</select>
+
+					<div class="radio-row">
+						<label>Would you visit again?</label>
+						<label class="small"><input type="radio" name="visit" value="yes" checked> Yes</label>
+						<label class="small"><input type="radio" name="visit" value="no"> No</label>
+						<label class="small"><input type="radio" name="visit" value="maybe"> Maybe</label>
+					</div>
+
+					<label for="comments">Comments:</label>
+					<textarea id="comments" name="comments" rows="5" placeholder="Write your review here..."></textarea>
+
+					<div class="checkbox-row">
+						<label class="small"><input type="checkbox" id="updates" name="updates"> Sign me up for email updates</label>
+					</div>
+				</fieldset>
+
+				<div class="actions">
+					<button type="submit">Submit review</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
+
