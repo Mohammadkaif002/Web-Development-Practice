@@ -1,0 +1,204 @@
+CSS is Cascading Style Sheets.
+
+If HTML is a skeleton of a web page then CSS is the skin of a web page.
+
+CSS tells the browser how the content of a web page should look like.
+
+Invented By Tim Berners-Lee in 1996.[Hakon Wium Lie]
+
+CSSOM (CSS Object Model).
+
+WWW3-World Wide Web Consortium (W3C) is responsible for the development of CSS.
+
+functionality
+1.Selector
+2.Property
+3.Value
+
+USERS OF CSS:
+1.Improves User Experience By Making Enhancing User Interface.
+2.Seperates Content and Design.
+3.Maintains Consistency Across Multiple Pages.
+4.Make Web Pages For Responsive For Different Devices. EX:Mobile,Tablet,Laptop,Desktop.
+5.Reduces Code Duplication.
+6.Adds Visual Effects Like Animations,Transitions,Transformations Etc.
+
+HOW TO USE CSS:
+Selector{
+prop:value;
+}
+
+When CSS Is Loaded Into Browser, Tree Like Structure Called CSSOM(Cascading Style Sheets Object Model) Will Be Created
+After Parsing CSS In Browser.
+
+Just Like As The Browser Converts HTML Into Dom(Document Object Model), It Converts CSS Into CSSOM.
+
+Later Browser Will Combines Both DOM And CSSOM To Create And Render Tree.
+
+
+HTML CSS
+↓ ↓
+HTML Pareser CSS Pareser
+↓ ↓
+DOM CSSOM
+↘ ↙
+↘ ↙
+↘ ↙
+↘ ↙
+Render Tree
+↓
+LAYOUT(Calculating The Size And Position)
+↓
+Painting(Applies Colors,Borders,Shadows)
+↓
+Composing
+↓
+Screen
+
+TYPES OF CSS:
+1. Inline CSS.
+Writing CSS directly inside the HTML element using the style attribute.
+
+Example:
+<p style="color:blue;font-size:50px;line-height:1.5;">This is a example for Inline CSS.</p>
+
+Advantage of Inline CSS:
+1.Good For Small Changes.
+2.It Is Having High Priority.
+
+Disadvantage of Inline CSS:
+1.It Is Required To Apply Each And Every HTML Element Individually.
+2.Not Reusable
+
+2. Internal CSS.
+Writing The CSS Property Inside The </style /> Tag In The HTML Document.
+Example:
+
+<head>
+  <style>
+    p {
+      color: blue;
+      font-size: 50px;
+      line-height: 1.5;
+    }
+  </style>
+</head>=
+
+Advantage of Internal CSS:
+1.Reusale.
+2.Easy To Access.
+3.Better For Single Pages.
+
+Disadvantage of Internal CSS:
+1.Not Reusable Across Multiple Pages.
+
+3. External CSS.
+Keeping Styling Property Multiple CSS File.
+Can Be Connected To HTML Using
+<link> tag.
+
+Example:
+<!-- <link rel="stylesheet" href="styles.css"> -->
+
+Advantage of External CSS:
+1.Reusable Across Multiple Pages.
+2.Most Recommended Method.
+3.Easy To Maintain.Box Model:
+1. Content: The actual content of the box, where text and images appear.
+2. Padding: Clears an area around the content. The padding is transparent.
+3. Border: A border that goes around the padding and content.
+4. Margin: Clears an area outside the border. The margin is transparent.
+5. Width and Height: The width and height of the content area.
+6. It is used to create space around elements.
+
+// SELECTORS:
+>Selector is an method to target an html element to apply CSS.
+ID shouldnt be duplicate.
+uses to identify a single element.
+
+>Syntax:
+selector{
+css property: value;
+}
+>Types of selectors:
+1.Basic selector:
+a.Tag/Name selector
+b.id selector
+c.class selector
+d.Attribute selector
+1. selecting an html element by using its type attribute.
+2. Commonly used in form elements.
+syntax:
+[attribute]{
+css property: value;
+}
+4. html element with a specific attribute value.
+e.Group selector
+f.universal selector
+1. Selects all html elements to apply same css property.
+Uses-All element is selected.
+syntax:
+*{
+css property: value;
+}
+
+02.ADVANCED SELECTOR:
+a.combinator:
+a.Descendant selector
+b.Child selector
+c.Adjacent sibling selector
+d.General sibling selector
+b.pseudo-class and its types
+Pseudo element are used to select an whole html element to change the state based on links available on the page, based
+on user interaction, position of an element in document.
+Types of pseudo-class:
+1. Link pseudo-class.
+2. Visited pseudo-class.
+3. Hover pseudo-class.
+4. Active pseudo-class.
+5. Focus pseudo-class.
+6. First-child pseudo-class.
+7. Last-child pseudo-class.
+8. Nth-child pseudo-class.
+9. Nth-last-child pseudo-class.????
+10. Nth-of-type pseudo-class. (has)
+11. Nth-last-of-type pseudo-class. ()
+selects a parent element with reference to child.
+12. Checked.
+13. Root.
+
+c.pseudo-element and its types
+1. Inline
+It makes element to be displayed in same line side by side.
+Elements wont accept height and width.
+it also default for some html elements.
+
+2.Inline Block
+It makes elements to be displayed in same line side by side.
+Can apply height and width.
+
+3.Flex
+Flex stands for flexible box layout.
+Makes an element to be container, which converts child elements into inline block elements.
+Apply flex only to parent element.
+Create a parent and child relationship between outer element.
+Used to maintain spaces, alignment and make web page as responsive.
+
+*HYPER LINK:
+Hyper link is a method to create hyper text.
+Hyper text is a text which is avallable on the web page, which is linked internally with another web pаgе.
+Anchor tag is used to create hyper text.
+Syntax:
+<a href" target="">content</a>
+Attributes:
+href: HyperReference - name/path/url
+target: Decides in which tab next page should open · _self, blank
+download : to downlead files pdf, xls, docs, csv. 
+LInking local doc with text:
+<p> Click
+<a hrefz"Inserting_Images.html" targeta"_ blank">here</a>
+to open image doc
+</D>
+s1- Linking text to external web page/url“>
+<a hrefa"https://qspiders.com/branches/btm-jspiders?branchlda8-branchld"
+>jpiders</a>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+    <style>
+    .parent{
+        height: auto;
+        width: 80%;
+        background-color: rgb(158, 146, 169);
+        box-shadow: 0px 0px 20px 10px crimson(0,0,0,0.796) inset;
+        display: flex;
+
+        flex-direction: row;
+        /* flex-direction: column-reverse; */
+
+        /*justify-content
+        /* justify-self:flex-start;// This is default */
+        /* justify-content:flex-end; */
+        justify-content: center;
+        justify-content: space-around;
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+
+        /* Align-items */
+        align-items: center;
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        
+        flex-wrap: wrap;
+
+        row-gap: 2px;
+
+        
+    }
+    .item{
+        height: 180px;
+        width: 180px;
+        background-color: antiquewhite;
+        box-shadow: 0px 0px 10px 5px rgba(red, green, blue, alpha) inset ;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    </style>
+    <div class="parent" >
+        <div class ="item" >1</div>
+        <div class ="item" >2</div>
+        <div class ="item" >3</div>
+        <div class ="item" >4</div>
+        
+    </div>
+</head>
+<body>
+    
+</body>
+</html>

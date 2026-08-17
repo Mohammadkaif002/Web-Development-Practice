@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin:0;
+    }
+    .shopping{
+        height: 70vh;
+        width: 100%;
+        background: linear-gradient(25deg,lightcyan,rgb(176,175,175));
+        display: flex;
+        align-items:center;
+        justify-content: space-evenly;
+        
+    }
+    .shopping>.card{
+        height: 90%;
+        width: 300px;
+        background-color: snow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:column;
+        text-align: center;
+        gap: 5px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .shopping .card>img{
+        width: 60%;
+    }
+    .shopping .card>button{
+        height: 45px;
+        width: 100%;
+        background-color: rgb(40, 173, 40);
+        color: white;
+        font-size: 1.1rem;
+        border: none;
+    }
+    .shopping .card:hover{
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.676);
+        transform: scale(1.05) translate(-5px, -5px);
+        transition: all 200ms linear;
+    }
+    .no-stock{
+        color: red;
+        font-weight: 900;
+    }
+    .card:has(.no-stock){
+        opacity: 0.5;
+        filter: grayscale(100%);
+    }
+    </style>
+</head>
+<body>
+    <!--
+        Pseudo class
+        ⁕ Pseudo classes
+        ⁕ Pseudo elements are used to select an whole html element to change the state based on links available on the page,
+        based on user interaction,position of an element in document
+
+        Syntax:
+            selector : pseuodo-class{
+            //CSS Properties
+            }
+        ⁕ Types :
+            1.link : used to change the state of an unvisited links
+            2.visited : Changes the state of visited link
+            3.active
+            4.focus
+            5.hover
+            6.first-child
+            7.last-child
+            8.nth-child()
+            9.nth-child(even/odd)
+            10.has() : Select an parent element with references to child.
+            11.not()
+            12.checked
+            13.root
+    -->
+            <!-- <style>
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                a:link{
+                    color:red;
+                }
+                a:visited{
+                    color:green;
+                }
+                /* a:hover{
+                    cursor:
+                } */
+            </style>
+            <a  href="https://www.google.com">Google</a><br>
+            <a  href="https://www.facebook.com">Facebook</a><br>
+            <a  href="https://www.youtube.com">Youtube</a><br>
+            <a  href="https://www.qspider.com">Qspider</a><br>
+            <a  href="https://www.instagram.com">Instagram</a><br>
+            <a  href="https://www.x.com">x</a><br>
+            <a  href="https://www.snapchat.com">Snapchat</a><br>
+            <a  href="https://www.linkedin.com">LinkedIn</a><br>
+            <a  href="https://www.github.com">GitHub</a><br> -->
+
+    <div class="shopping">
+        <div class="card">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/da/cms-assets/cms/product/14116e92-4c91-48a6-b73d-f53c1ee618da.png" alt="">
+            <h2>Arokya Full Cream Milk</h2>
+            <p>Arokya Full Cream Milk (Polypack) is rich, creamy, wholesome and tasty and offers a distinctive taste of arokya!!.
+            <p>500ml</p>
+            <p>&#8377;50</p>
+            <span>Available</span>
+            <button>Add to Cart</button>
+
+        </div>
+        <div class="card">
+            <img src="https://cdn.grofers.com/da/cms-assets/cms/product/rc-upload-1771595609969-912.png?bg_token=color.background.quaternary" alt="">
+            <h2>Cadbury Bournville </h2>
+            <p>Cadbury Bournville is a premium dark chocolate that delivers an intense experience to lovers of dark chocolate!.
+                </p>
+            <p>500gm</p>
+            <p>&#8377;250</p>
+            <span>Available</span>
+            <button>Add to Cart</button>
+
+        </div>
+        <div class="card">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/da/cms-assets/cms/product/rc-upload-1785234255555-409.png" alt="">
+            <h2>Grapes - Bangalore Blue</h2>
+            <p>Black Grapes are small, sweet and juicy round berries. They are often used to make jellies, juices and wine chill!.</p>
+            <p>500gm</p>
+            <p>&#8377;50</p>
+            <p class="no-stock">Not Available</p>
+            <button>Add to Cart</button>
+
+        </div>
+        <div class="card">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/da/cms-assets/cms/product/rc-upload-1786077805938-104.png" alt="">
+            <h2>Maaza Mango Drink</h2>
+            <p>Maaza is India's No.1 mango drink, loved for its rich, indulgent taste of real mangoes it was good to taste fruity!.</p>
+            <p>500ml</p>
+            <p>&#8377;55</p>
+            <span>Available</span>
+            <button>Add to Cart</button>
+
+        </div>
+    </div>
+    <hr>
+    <style>
+        h1{
+            color: black;
+            text-transform: lowercase;
+        }
+        /* h1 element excludes from applying CSS property. */
+        .wrap:not(h1){
+            color: red;
+            text-transform: uppercase;
+        }
+    </style>
+    <div class="wrap">
+        <p>This is paragraph</p>
+        <h1>This is heading</h1>
+        <span>
+            This is span
+        </span>
+        <div>This is div</div>
+    </div>
+</body>
+</html>
